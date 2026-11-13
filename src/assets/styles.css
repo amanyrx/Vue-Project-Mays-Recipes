@@ -1,0 +1,289 @@
+:root {
+    --brown: #5c200f;
+    --orange: #edad4e;
+    --cream: #faedcb;
+    --yellow: #f9df70;
+    --red-orange: #d1613c;
+    --grey: #d9d9d9;
+    --text: #4a1c0c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fff;
+    color: var(--text);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* PAGE LAYOUT (grid): header / body / footer */
+.page-frame {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /* header / nav / body / footer */
+}
+
+/* BODY ROW (grid): sidebar | content */
+.body-row {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+
+/* HEADER (grid): logo | nav */
+.site-header {
+    background: var(--brown);
+    color: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 18px 28px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* NAV (grid): each item in its own column */
+.top-nav {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.search {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 14px;
+    width: 140px;
+    font-size: 0.8rem;
+}
+
+/* SIDEBAR (grid): heading, list, links, then subscribe button pushed to bottom */
+.sidebar {
+    background: var(--orange);
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto auto auto 1fr auto;
+    row-gap: 8px;
+    color: var(--text);
+}
+
+.sidebar h2 {
+    font-weight: normal;
+    color: var(--cream);
+    margin-bottom: 4px;
+}
+
+/* Category list (grid) */
+.sidebar ul {
+    display: grid;
+    row-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar li a:hover,
+.side-link:hover {
+    text-decoration: underline;
+}
+
+.side-link {
+    color: var(--cream);
+}
+
+.subscribe-btn {
+    grid-row: 6;
+    align-self: end;
+    background: var(--yellow);
+    border: 1px solid var(--text);
+    padding: 8px 10px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background: #fff0a0;
+}
+
+/* CONTENT */
+.content {
+    background: var(--cream);
+    padding: 16px 24px;
+}
+
+/* Homepage list of cards (grid) */
+.content section:not(.recipe-view) {
+    display: grid;
+    row-gap: 20px;
+}
+
+.content-title {
+    text-align: center;
+    font-weight: normal;
+}
+
+.card {
+    background: var(--yellow);
+    padding: 20px;
+}
+
+/* Homepage recipe card (grid): thumbnail | title */
+.recipe-card {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    column-gap: 20px;
+    align-items: start;
+    min-height: 130px;
+    cursor: pointer;
+}
+
+.recipe-card h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.thumb {
+    width: 115px;
+    height: 90px;
+    background: var(--grey);
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RECIPE VIEW (grid): main recipe | progress card */
+.recipe-view {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.recipe-main {
+    min-height: 420px;
+}
+
+.recipe-main h2,
+.progress-card h2 {
+    font-weight: normal;
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+}
+
+.recipe-main h4 {
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+/* Step header (grid): label | checkbox */
+.step-header {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.step-text {
+    font-size: 0.7rem;
+    margin: 4px 0 0 16px;
+}
+
+.check {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--red-orange);
+    cursor: pointer;
+}
+
+.check:checked {
+    background: var(--brown);
+}
+
+/* Progress card */
+.progress-card {
+    min-height: 300px;
+}
+
+.progress-track {
+    height: 3px;
+    background: #e7c14d;
+    margin-bottom: 14px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--red-orange);
+    transition: width 0.3s;
+}
+
+/* Ingredient row (grid): checkbox | name */
+.ingredient {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    align-items: center;
+    column-gap: 8px;
+    margin-bottom: 6px;
+}
+
+.small {
+    font-size: 0.7rem;
+}
+
+/* FOOTER */
+.site-footer {
+    background: var(--red-orange);
+    color: var(--cream);
+    padding: 22px 28px;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+.site-nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    column-gap: 24px;
+    padding: 10px 28px;
+    background: var(--yellow);
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+.site-nav .nav-current {
+    font-weight: bold;
+    text-decoration: underline;
+}

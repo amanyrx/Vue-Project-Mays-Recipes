@@ -1,47 +1,55 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script setup>
+import { ref } from 'vue'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
+import SiteNav from './components/SiteNav.vue'
+
+const route = useRoute()
+
+const categories = [
+  'Baking',
+  'Recipes',
+  'Healthy Eating',
+  'Techniques & Tips',
+  'Seasonal & Occasions'
+]
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="page-frame">
+    <!-- HEADER -->
+    <header class="site-header">
+      <RouterLink to="/" class="logo">May's Recipes</RouterLink>
+      <nav class="top-nav" aria-label="Site links">
+        <a href="#">More Articles</a>
+        <a href="#">Newsletter</a>
+        <a href="#">Account</a>
+      </nav>
+    </header>
+    <SiteNav />
+    <div class="body-row">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>More Articles</h2>
+        <ul>
+          <li v-for="c in categories" :key="c">
+            <a href="#">{{ c }}</a>
+          </li>
+        </ul>
+        <a href="#" class="side-link">Newsletter</a>
+        <a href="#" class="side-link">Account</a>
+        <button class="subscribe-btn">Subscribe to newsletter</button>
+      </aside>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <!-- PAGE CONTENT: your router renders HomePage / RecipeView here -->
+      <main id="main-content" class="content">
+        <RouterView />
+      </main>
     </div>
-  </header>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <a href="#">Contact Us</a>
+    </footer>
+  </div>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
