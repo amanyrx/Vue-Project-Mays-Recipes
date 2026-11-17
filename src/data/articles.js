@@ -8,7 +8,7 @@ export const initialArticles = [
             '\n' +
             'The NHS advises eating at least five portions of fruit and vegetables a day, with a portion being around 80 g. Fresh, frozen, tinned and dried all count, so there is no need to buy expensive produce. Frozen peas and tinned tomatoes are cheap, convenient and just as useful.\n' +
             '\n' +
-            'To make it easy, aim to add one extra colour to every meal. Stir spinach through a curry, grate carrot into a bolognese, or top porridge with berries. Small changes soon add up.'
+            'To make it easy, aim to add one extra colour to every meal. Stir spinach through a curry, grate carrot into a bolognese, or top porridge with berries. Small changes soon add up.',
         category: 'Healthy Eating'
     },
     {   id: 2,
@@ -20,7 +20,7 @@ export const initialArticles = [
             '\n' +
             'Salt is another easy win. Adults in the UK are advised to eat no more than 6 g of salt a day, and much of it comes from processed foods. Building flavour with garlic, herbs, spices, lemon juice and a splash of vinegar means you can use less salt without making food taste bland.\n' +
             '\n' +
-            'Choosing wholegrain options such as brown rice, wholemeal pasta and wholegrain bread also helps boost fibre, which supports digestion and keeps you feeling full for longer. The recommended intake for adults is 30 g of fibre a day.'
+            'Choosing wholegrain options such as brown rice, wholemeal pasta and wholegrain bread also helps boost fibre, which supports digestion and keeps you feeling full for longer. The recommended intake for adults is 30 g of fibre a day.',
         category: 'Healthy Eating'
     },
     {   id: 3,
@@ -32,7 +32,7 @@ export const initialArticles = [
             '\n' +
             'Salt is only part of the picture. If a dish tastes dull but not under-salted, it often needs acid, such as a squeeze of lemon, a dash of vinegar or a spoonful of yoghurt, to lift it. Too sharp? A pinch of sugar or a little fat can soften it.\n' +
             '\n' +
-            'Always taste as you go, and use a clean spoon each time. Add a little at a time, because it is easy to add more but impossible to take it away.'
+            'Always taste as you go, and use a clean spoon each time. Add a little at a time, because it is easy to add more but impossible to take it away.',
         category: 'Tips and Techniques'
     },
     {   id: 4,
@@ -44,7 +44,7 @@ export const initialArticles = [
             '\n' +
             'Use the claw grip: curl the fingertips of your guiding hand inwards and rest the knife blade against your knuckles. Keep the tip of the knife on the board and rock the blade smoothly through the food. Place a damp cloth under your chopping board to stop it slipping.\n' +
             '\n' +
-            'Start with simple tasks such as slicing onions and dicing carrots. Aim for pieces of an even size so they cook at the same rate. Speed will come with practice.'
+            'Start with simple tasks such as slicing onions and dicing carrots. Aim for pieces of an even size so they cook at the same rate. Speed will come with practice.',
         category: 'Tips and Techniques'
     },
     {   id: 5,
@@ -56,7 +56,7 @@ export const initialArticles = [
             '\n' +
             'Roasting brings out natural sweetness: toss cubes of butternut squash in olive oil and roast at 200°C (180°C fan) for around 35 minutes. Blitz the cooked squash with stock for an easy soup. Apples pair well with pork, cheese and red cabbage, as well as in puddings.\n' +
             '\n' +
-            'Eating seasonally often means fresher, more flavoursome food at a lower price. Visit a local farm shop or market to see what is in season near you.'
+            'Eating seasonally often means fresher, more flavoursome food at a lower price. Visit a local farm shop or market to see what is in season near you.',
         category: 'Seasonal and Occasions'
     },
     {   id: 6,
@@ -68,7 +68,7 @@ export const initialArticles = [
             '\n' +
             'Much can be done in advance. Peel vegetables the day before and keep them in cold water, make the cranberry sauce, and prepare stuffing ready for the oven. Many items, such as gravy, can be made ahead and reheated.\n' +
             '\n' +
-            'On the day, rest the turkey for at least 30 minutes under foil, which frees up the oven for roast potatoes and vegetables. Always follow the cooking guidance on the packaging and check with a probe thermometer that the thickest part of the meat is cooked through before serving.'
+            'On the day, rest the turkey for at least 30 minutes under foil, which frees up the oven for roast potatoes and vegetables. Always follow the cooking guidance on the packaging and check with a probe thermometer that the thickest part of the meat is cooked through before serving.',
         category: 'Seasonal and Occasions'
     }
 ]
