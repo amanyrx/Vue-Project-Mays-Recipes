@@ -513,3 +513,32 @@ progress::-moz-progress-bar {
         row-gap: 8px;
     }
 }
+
+.recipe-header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 20px;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.recipe-thumb {
+    width: 200px;
+    height: 150px;
+}
+
+.recipe-facts {
+    display: grid;
+    row-gap: 6px;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+    .recipe-header {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-thumb {
+        width: 100%;
+    }
+}

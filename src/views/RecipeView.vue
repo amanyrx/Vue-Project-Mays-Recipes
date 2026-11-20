@@ -34,8 +34,18 @@ const progress = computed(() => {
 
     <div class="card recipe-main">
       <h2 id="recipe-heading">Recipe: {{ recipe.name }}</h2>
-<!--      <img v-if="recipe.image" :src="recipe.image" :alt="recipe.name" class="recipe-photo">-->
-      <p>{{ recipe.prepTime }} min prep · {{ recipe.cookTime }} min cook · {{ recipe.category }}</p>
+      <div class="recipe-header">
+        <div class="thumb recipe-thumb">
+          <img v-if="recipe.image" :src="recipe.image" :alt="recipe.name">
+        </div>
+        <ul class="recipe-facts">
+          <li><strong>Name:</strong> {{ recipe.name }}</li>
+          <li><strong>Prep time:</strong> {{ recipe.prepTime }} minutes</li>
+          <li><strong>Cook time:</strong> {{ recipe.cookTime }} minutes</li>
+          <li><strong>Category:</strong> {{ recipe.category }}</li>
+        </ul>
+      </div>
+<!--      <p>{{ recipe.prepTime }} min prep · {{ recipe.cookTime }} min cook · {{ recipe.category }}</p>-->
       <br>
       <h4>Description</h4>
       <p class="description">{{ recipe.description }}</p>
