@@ -3,6 +3,7 @@ import Homepage from '../views/Homepage.vue'
 import RecipeView from '../views/RecipeView.vue'
 import ManageRecipeView from "@/views/ManageRecipeView.vue";
 import RecipeOverview from "@/views/RecipeOverview.vue";
+import About from "@/views/About.vue";
 // import ManageWorkoutView from '../views/ManageWorkoutView.vue'
 // import NotFoundView from '../views/NotFoundView.vue'
 
@@ -13,6 +14,7 @@ const router = createRouter({
         { path: '/manage', name: 'manage', component: ManageRecipeView },
         { path: '/recipes', name: 'recipes', component: RecipeOverview },
         { path: '/recipe/:id', name: 'recipe-detail', component: RecipeView },
+        { path: '/about', name: 'about', component: About },
     ],
     scrollBehavior() {
         return { top: 0 }

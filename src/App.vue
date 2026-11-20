@@ -21,6 +21,7 @@ const categories = [
     <header class="site-header">
       <RouterLink to="/" class="logo">May's Recipes</RouterLink>
       <nav class="top-nav" aria-label="Site links">
+        <RouterLink to="about">About</RouterLink>
         <RouterLink to="recipes">More Recipes</RouterLink>
         <a href="#">More Articles</a>
         <a href="#">Account</a>
