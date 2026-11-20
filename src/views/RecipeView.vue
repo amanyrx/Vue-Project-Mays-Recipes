@@ -34,7 +34,9 @@ const progress = computed(() => {
 
     <div class="card recipe-main">
       <h2 id="recipe-heading">Recipe: {{ recipe.name }}</h2>
+<!--      <img v-if="recipe.image" :src="recipe.image" :alt="recipe.name" class="recipe-photo">-->
       <p>{{ recipe.prepTime }} min prep · {{ recipe.cookTime }} min cook · {{ recipe.category }}</p>
+      <br>
       <h4>Description</h4>
       <p class="description">{{ recipe.description }}</p>
 

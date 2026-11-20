@@ -19,6 +19,7 @@ export const initialRecipes = [
             '11. Add more flavouring if needed.\n' +
             '12. Pour into the baking tin.\n' +
             '13. Bake for roughly 45 minutes. Check within that time frame, but don\'t open the oven too often, as it can interrupt the baking.',
+        image: '/public/chiffon-pandan-cake-unsplash.jpg',
         category: 'Baking'
     },
     {
@@ -38,6 +39,7 @@ export const initialRecipes = [
             '8. Cool in the tins for 5 minutes, then turn out onto a wire rack.\n' +
             '9. Once fully cool, spread jam on one sponge and whipped cream on top, then sandwich together.\n' +
             '10. Dust with icing sugar.',
+        image: '/public/victoria-sponge-unsplash.jpg',
         category: 'Baking'
     },
     {
@@ -56,6 +58,7 @@ export const initialRecipes = [
             '7. Scoop tablespoon-sized balls onto the trays, spaced well apart.\n' +
             '8. Bake for 10-12 minutes until the edges are golden but the centres are still soft.\n' +
             '9. Cool on the tray for 5 minutes before moving to a wire rack.',
+        image: '/public/chocolate-chip-unsplash.jpg',
         category: 'Baking'
     },
     {
@@ -74,6 +77,7 @@ export const initialRecipes = [
             '7. Pour into the tin.\n' +
             '8. Bake for 50-60 minutes, until a skewer inserted in the centre comes out clean.\n' +
             '9. Cool in the tin for 10 minutes, then turn out onto a wire rack.',
+        image: '/public/banana-bread-unsplash.jpg',
         category: 'Baking'
     },
     {
@@ -92,6 +96,7 @@ export const initialRecipes = [
             '7. Place on the tray and brush the tops with the beaten egg or milk.\n' +
             '8. Bake for 10-12 minutes until risen and golden.\n' +
             '9. Cool on a wire rack and serve with jam and cream.',
+        image: '/public/scones-unsplash.jpg',
         category: 'Baking'
     },
     {
@@ -109,6 +114,7 @@ export const initialRecipes = [
             '6. Return the chicken to the pan and simmer for a further 10 minutes, until cooked through.\n' +
             '7. Stir in the cream and warm through gently. Season with salt.\n' +
             '8. Scatter with fresh coriander and serve with rice and naan.',
+        image: '/public/chicken-tikka-unsplash.jpg',
         category: 'Cooking'
     },
     {
@@ -126,6 +132,7 @@ export const initialRecipes = [
             '6. Bring to the boil, then reduce the heat and simmer, partially covered, for 40 minutes, stirring occasionally.\n' +
             '7. About 10 minutes before the end, cook the spaghetti in a large pan of salted boiling water following the packet instructions. Drain.\n' +
             '8. Remove the bay leaf, toss the sauce through the spaghetti and serve with Parmesan.',
+        image: '/public/spagetti-unsplash.jpg',
         category: 'Cooking'
     },
     {
@@ -141,6 +148,7 @@ export const initialRecipes = [
             '4. Add the courgette, green beans and pepper. Simmer for 8-10 minutes until the chicken is cooked through and the vegetables are tender.\n' +
             '5. Stir in the lime juice and taste, adding more fish sauce or sugar if needed.\n' +
             '6. Scatter with the herbs and serve with jasmine rice.',
+        image: '/public/green-curry-unsplash.jpg',
         category: 'Cooking'
     },
     {
@@ -158,6 +166,7 @@ export const initialRecipes = [
             '6. Add the stock a ladleful at a time, stirring often and waiting until each is absorbed before adding the next. This takes about 20 minutes, until the rice is tender with a slight bite.\n' +
             '7. Stir in the mushrooms, the remaining butter and the Parmesan. Season to taste.\n' +
             '8. Rest for 2 minutes, then serve topped with parsley.',
+        image: '/public/mushroom-risotto-unsplash.jpg',
         category: 'Cooking'
     },
     {
@@ -174,6 +183,7 @@ export const initialRecipes = [
             '5. Reduce the heat under the frying pan, add the butter and garlic, and cook for 1 minute. Stir in the lemon zest and juice.\n' +
             '6. Add the spinach and broccoli and toss until the spinach has wilted.\n' +
             '7. Serve the salmon on the greens, spooning over the lemon butter and scattering with herbs.',
+        image: '/public/salmon-unsplash.jpg',
         category: 'Cooking'
     },
     {
@@ -189,6 +199,7 @@ export const initialRecipes = [
             '4. Add the chopped tomatoes and stock. Bring to the boil, then reduce the heat and simmer for 30 minutes, stirring occasionally.\n' +
             '5. Add the kidney beans and cook for a further 10 minutes until the sauce is thick. Season to taste.\n' +
             '6. Serve with rice, a spoonful of soured cream and fresh coriander.',
+        image: '/public/chilli-con-carne-unsplash.jpg',
         category: 'Cooking'
     }
 ]

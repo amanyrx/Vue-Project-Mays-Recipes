@@ -54,7 +54,10 @@ function clearFilters() {
     <p v-if="recipes.length === 0">No recipes yet. Add one in Manage recipes.</p>
     <ul v-else-if="filteredRecipes.length" class="exercise-list">
       <li v-for="recipe in filteredRecipes" :key="recipes.id" class="exercise">
-        <div>
+        <div class="thumb" v-if="recipe.image">
+          <img :src="recipe.image" :alt="recipe.name">
+        </div>
+        <div class="exercise-info">
           <RouterLink :to="{ name: 'recipe-detail', params: { id: recipe.id } }">
             {{ recipe.name }}
           </RouterLink>
