@@ -496,12 +496,12 @@ progress::-moz-progress-bar {
 /*    grid-template-columns: 1fr;*/
 /*}*/
 
-/* The manage page lists do have buttons, so keep three columns there */
+/* The manage page lists do have buttons: three columns */
 .dashboard-grid .exercise {
     grid-template-columns: 1fr auto auto;
 }
 
-/* ---------- SMALL SCREENS ---------- */
+/* ---------- RESPONSIVE? ---------- */
 @media (max-width: 800px) {
     .dashboard-grid {
         grid-template-columns: 1fr;

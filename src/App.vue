@@ -41,7 +41,7 @@ const categories = [
         <button class="subscribe-btn">Subscribe to newsletter</button>
       </aside>
 
-      <!-- PAGE CONTENT: your router renders HomePage / RecipeView here -->
+      <!-- PAGE CONTENT: HomePage / RecipeView route here -->
       <main id="main-content" class="content">
         <RouterView />
       </main>
