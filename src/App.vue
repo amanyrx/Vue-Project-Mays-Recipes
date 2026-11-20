@@ -7,7 +7,7 @@ const route = useRoute()
 
 const categories = [
   'Baking',
-  'Recipes',
+  'Cooking',
   'Healthy Eating',
   'Techniques & Tips',
   'Seasonal & Occasions'
@@ -21,8 +21,8 @@ const categories = [
     <header class="site-header">
       <RouterLink to="/" class="logo">May's Recipes</RouterLink>
       <nav class="top-nav" aria-label="Site links">
+        <RouterLink to="recipes">More Recipes</RouterLink>
         <a href="#">More Articles</a>
-        <a href="#">Newsletter</a>
         <a href="#">Account</a>
       </nav>
     </header>

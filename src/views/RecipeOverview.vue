@@ -9,11 +9,11 @@ const { recipes, completedCount, totalMinutes, progressPercent } = useRecipes()
   <section class="panel" aria-labelledby="overview-heading">
     <h1 id="overview-heading" tabindex="-1">Your recipes</h1>
     <p>{{ completedCount }} of {{ recipes.length }} recipes completed</p>
-    <p>{{ totalMinutes }} minutes in total</p>
-    <label for="overview-progress">{{ progressPercent }}% of steps complete</label>
-    <progress id="overview-progress" :value="progressPercent" max="100">
-      {{ progressPercent }}%
-    </progress>
+<!--    <p>{{ totalMinutes }} minutes in total</p>-->
+<!--    <label for="overview-progress">{{ progressPercent }}% of steps complete</label>-->
+<!--    <progress id="overview-progress" :value="progressPercent" max="100">-->
+<!--      {{ progressPercent }}%-->
+<!--    </progress>-->
 
     <p v-if="recipes.length === 0" class="empty-state">
       No recipes yet. Open Manage recipes to add one.
