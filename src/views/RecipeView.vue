@@ -31,6 +31,7 @@ const progress = computed(() => {
 
 <template>
   <section v-if="recipe" class="recipe-view" aria-labelledby="recipe-heading">
+
     <div class="card recipe-main">
       <h2 id="recipe-heading">Recipe: {{ recipe.name }}</h2>
       <p>{{ recipe.prepTime }} min prep · {{ recipe.cookTime }} min cook · {{ recipe.category }}</p>
@@ -70,7 +71,6 @@ const progress = computed(() => {
       <p><RouterLink to="/">Back to recipes</RouterLink></p>
     </div>
   </section>
-
   <section v-else class="panel">
     <p>This recipe is no longer available.</p>
     <p><RouterLink to="/">Back to recipes</RouterLink></p>
